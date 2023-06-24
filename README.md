@@ -1,9 +1,12 @@
-##---MY TERRAFORM MODULE TO PRIVISION AN EKS CLUSTER WITH CUSTOM NETWORKS--->>
+# MY TERRAFORM MODULE TO PRIVISION AN EKS CLUSTER WITH CUSTOM NETWORKS---
 
-##Sample Usage
+# Sample Usage:
 
+
+
+~~~~~~~
 module "eks-module" {
-  source         = "https://github.com/DonBonerunsing/my-eks-module/"
+  source         = "github.com/DonBonerunsing/my-eks-module/"
   region         = "Enter your providers region here"
   vpc_cidr       = "10.0.0.0/16"
   dns_hostnames  = true
